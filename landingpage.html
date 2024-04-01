@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="asset/style.css" />
+  <title>Literasik</title>
+  <link rel="icon" type="image/x-icon" href="asset/image/Logo literasik.png">
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <a href="#"><img src="asset/image/Logo.png" alt="Logo"></a>
+      </div>
+      <ul class="links">
+        <li><a href="hero">Beranda</a></li>
+        <li><a href="hero">Tentang Kami</a></li>
+        <li><a href="hero">Blog</a></li>
+      </ul>
+      <li>
+        <a href="Login.html" class="action_btn register_btn">Masuk</a>
+        <a href="#" class="action_btn">Daftar</a>
+      </li>
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+
+    <div class="dropdown_menu">
+      <li><a href="hero">Beranda</a></li>
+      <li><a href="hero">Tentang Kami</a></li>
+      <li><a href="hero">Blog</a></li>
+      <li><a href="Login.html" class="action_btn register_btn">Masuk</a></li>
+      <li><a href="#" class="action_btn">Daftar</a></li>
+    </div>
+    </div>
+  </header>
+
+  <div class="content">
+    <div class="landing-container">
+      <div class="text-content">
+        <h1>Menyemai Benih Pengetahuan, Membangun Masa Depan</h1>
+        <p>Temukan yang kamu cari disini!</p>
+        <div class="search-container">
+          <input type="text" class="search-input"
+            placeholder="Masukan kata kunci (contoh: judul buku, berita, nama event, dll)">
+        </div>
+      </div>
+      <div class="image-content">
+        <img src="asset/image/rafiki.png" alt="Contoh Gambar">
+      </div>
+    </div>
+
+    <div class="container-title">
+      <h2>Layanan Kami</h2>
+    </div>
+
+    <div class="services-container">
+      <!-- Card 1 -->
+      <div class="service-card">
+        <img src="asset/image/card1.png" alt="Gambar 1">
+        <div class="service-content">
+          <h2>Ruang Belajar (7-12)</h2>
+          <p>Temukan berbagai konten pembelajaran dalam bentuk video, audio, bacaan dan permainan yang menyenangkan.</p>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="service-card">
+        <img src="asset/image/card2.png" alt="Gambar 2">
+        <div class="service-content">
+          <h2>Ruang Belajar (13-18)</h2>
+          <p>Temukan berbagai konten pembelajaran dalam bentuk video, audio, bacaan.</p>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="service-card">
+        <img src="asset/image/card3.png" alt="Gambar 3">
+        <div class="service-content">
+          <h2>Buku Bacaan (Umum)</h2>
+          <p>Temukan bacaan untuk setiap suasana hati dan momen! Dengan beragam pilihan genre dan kategori, fitur buku.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="button-container">
+      <button class="button" onclick="showContent('menulis')">
+        <h4>Menulis</h4>
+      </button>
+      <button class="button" onclick="showContent('komunitas')">
+        <h4>Komunitas</h4>
+      </button>
+      <hr class="button-divider">
+    </div>
+
+    <div id="menulis-content" class="container-menulis">
+      <div class="content-menulis">
+        <h1>Menulis</h1>
+        <p>Wujudkan imajinasi Anda dengan fitur menulis novel yang interaktif!</p>
+        <button class="start-button-menulis">Mulai</button>
+      </div>
+      <div class="image-container-menulis">
+        <img src="asset/image/menulis.png" alt="Gambar">
+      </div>
+    </div>
+
+    <div id="komunitas-content" class="container-menulis" style="display: none;">
+      <div class="content-menulis">
+        <h1>Komunitas</h1>
+        <p>Temukan dan berinteraksi dengan komunitas menulis yang inspiratif!</p>
+        <button class="start-button-menulis">Mulai</button>
+      </div>
+      <div class="image-container-menulis">
+        <img src="asset/image/menulis.png" alt="Gambar">
+      </div>
+    </div>
+
+    <!-- Garis bawah -->
+    <div class="section-divider"></div>
+
+    <div class="container-title">
+      <h2>Layanan Kami</h2>
+    </div>
+
+    <!-- Artikel Inspiratif -->
+    <div class="article-container">
+      <!-- Card Artikel 1 -->
+      <div class="article-card">
+        <img src="asset/image/image 66.jpg" alt="Foto Artikel 1">
+        <h3>Judul Artikel 1</h3>
+        <p>Kutipan singkat tentang artikel ini.</p>
+        <p class="date">Tanggal Publikasi: 17 Maret 2024</p>
+      </div>
+      <!-- Card Artikel 2 -->
+      <div class="article-card">
+        <img src="asset/image/image 66.jpg" alt="Foto Artikel 2">
+        <h3>Judul Artikel 2</h3>
+        <p>Kutipan singkat tentang artikel ini.</p>
+        <p class="date">Tanggal Publikasi: 18 Maret 2024</p>
+      </div>
+      <!-- Card Artikel 3 -->
+      <div class="article-card">
+        <img src="asset/image/image 66.jpg" alt="Foto Artikel 3">
+        <h3>Judul Artikel 3</h3>
+        <p>Kutipan singkat tentang artikel ini.</p>
+        <p class="date">Tanggal Publikasi: 19 Maret 2024</p>
+      </div>
+      <!-- Card Artikel 4 -->
+      <div class="article-card">
+        <img src="asset/image/image 66.jpg" alt="Foto Artikel 3">
+        <h3>Judul Artikel 3</h3>
+        <p>Kutipan singkat tentang artikel ini.</p>
+        <p class="date">Tanggal Publikasi: 19 Maret 2024</p>
+      </div>
+      <!-- Card Artikel 4 -->
+      <div class="article-card">
+        <img src="asset/image/image 66.jpg" alt="Foto Artikel 3">
+        <h3>Judul Artikel 3</h3>
+        <p>Kutipan singkat tentang artikel ini.</p>
+        <p class="date">Tanggal Publikasi: 19 Maret 2024</p>
+      </div>
+      <!-- Card Artikel 4 -->
+      <div class="article-card">
+        <img src="asset/image/image 66.jpg" alt="Foto Artikel 3">
+        <h3>Judul Artikel 3</h3>
+        <p>Kutipan singkat tentang artikel ini.</p>
+        <p class="date">Tanggal Publikasi: 19 Maret 2024</p>
+      </div>
+    </div>
+
+    <!-- Garis bawah -->
+    <div class="section-divider"></div>
+
+    <!-- Card untuk Berita Terbaru -->
+    <div class="container-title">
+      <h2>Berita Baru</h2>
+    </div>
+    <div class="news-container">
+      <!-- Card Berita Terbaru -->
+      <div class="news-card">
+        <img src="asset/image/image 60.jpg" alt="Gambar Berita 1">
+        <div class="news-info">
+          <h3>Judul Berita 1</h3>
+          <p class="date">Tanggal Publikasi: 21 Maret 2024</p>
+        </div>
+      </div>
+      <div class="news-card">
+        <img src="asset/image/image 60.jpg" alt="Gambar Berita 1">
+        <div class="news-info">
+          <h3>Judul Berita 1</h3>
+          <p class="date">Tanggal Publikasi: 21 Maret 2024</p>
+        </div>
+      </div>
+      <div class="news-card">
+        <img src="asset/image/image 60.jpg" alt="Gambar Berita 1">
+        <div class="news-info">
+          <h3>Judul Berita 1</h3>
+          <p class="date">Tanggal Publikasi: 21 Maret 2024</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="event-container">
+      <div class="event-content">
+        <div class="event-info">
+          <button class="register-button">Daftar disini > </button>
+          <h2>Ikuti Event yang Tersedia Disini!</h2>
+          <p>Mari temukan serunya setiap momen dan bergabunglah dalam pengalaman yang tidak hanya menghibur tetapi juga
+            memberikan inspirasi.</p>
+        </div>
+        <div class="event-illustration">
+          <img src="asset/image/event.png" alt="Ilustrasi Event">
+        </div>
+      </div>
+    </div>
+
+    <div class="journey-container">
+      <h2>Mulai Perjalanan Pembelajaranmu Bersama LITERASIK</h2>
+      <div class="journey-cards">
+        <div class="journey-card">
+          <img src="asset/image/globe.png" alt="Journey Image 1">
+          <div class="journey-info">
+            <p>Temukan berbagai macam konten literasi, mulai dari ulasan buku, artikel inspiratif, hingga cerita pendek
+              yang memikat.</p>
+          </div>
+        </div>
+        <div class="journey-card">
+          <img src="asset/image/naskah.png" alt="Journey Image 2">
+          <div class="journey-info">
+            <p>Ambil kesempatan untuk mengekspresikan diri. Mulailah menulis dan membagikan karya tulismu sendiri.</p>
+          </div>
+        </div>
+        <div class="journey-card">
+          <img src="asset/image/circle.png" alt="Journey Image 3">
+          <div class="journey-info">
+            <p>Sambutlah ide dan pandangan Anda dalam komunitas. Bertukar cerita, rekomendasi buku, dan temukan teman
+              sejati yang memiliki hobi serupa.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <!-- Kolom 1: Sejarah Website -->
+      <div class="footer-column history"> <!-- Menambahkan kelas "history" -->
+        <a href="#"><img src="asset/image/Logo2.png" alt="Logo"></a>
+        <p>Website ini didirikan dengan semangat untuk menyediakan ruang belajar yang inklusif dan menyenangkan bagi
+          siapa saja.
+          Lebih dari sekadar website, kami ingin menjadi jembatan yang menghubungkan orang-orang melalui literasi. Kami
+          percaya bahwa dengan kemampuan membaca dan menulis yang baik, setiap orang dapat mencapai potensi dan
+          berkontribusi secara positif kepada masyarakat.</p>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+
+      <!-- Kolom 2: Hubungi Kami -->
+      <div class="footer-column">
+        <h3>Hubungi Kami</h3>
+        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:info@example.com">info@example.com</a></p>
+        <p><i class="fa-solid fa-phone"></i> 123-456-789</p>
+        <p><i class="fa-solid fa-map-marker-alt"></i> Alamat Anda</p>
+      </div>
+
+      <!-- Kolom 3: Link/Menu -->
+      <div class="footer-column">
+        <h3>Link/Menu</h3>
+        <ul>
+          <li><a href="hero">Beranda</a></li>
+          <li><a href="hero">Tentang Kami</a></li>
+          <li><a href="hero">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-info">
+      <p>&copy; 2024 Literasik. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick = function () {
+      dropDownMenu.classList.toggle('open')
+      const isOpen = dropDownMenu.classList.contains('open')
+
+      toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+
+    function showContent(contentName) {
+      var contents = document.querySelectorAll('.container-menulis');
+      for (var i = 0; i < contents.length; i++) {
+        contents[i].style.display = 'none';
+      }
+      document.getElementById(contentName + '-content').style.display = 'flex';
+    }
+
+  </script>
+</body>
+
+</html>
