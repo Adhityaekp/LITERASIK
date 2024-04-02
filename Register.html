@@ -41,7 +41,7 @@
                     <div class="divider-text">Atau</div>
                 </div>
                 <div class="button-container">
-                    <button onclick="loginWithGoogle()" class="google-login-button">
+                    <button type="button" onclick="loginWithGooglePopup()" class="google-login-button">
                         <i class="fab fa-google"></i> Login dengan Google
                     </button>
                 </div>
@@ -53,5 +53,15 @@
     </div>
 
 </body>
+<script>
+    function loginWithGooglePopup() {
+        // Open Google login popup window
+        var width = 600,
+            height = 400;
+        var left = (screen.width - width) / 2;
+        var top = (screen.height - height) / 2;
+        var googleLoginPopup = window.open('GoogleLoginPopup.html', 'googleLoginPopup', 'width=' + width + ', height=' + height + ', left=' + left + ', top=' + top);
+    }
+</script>
 
 </html>
