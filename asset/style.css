@@ -181,6 +181,7 @@ Header {
 .search-container {
   position: relative;
   margin-top: 10px;
+  text-align: left;
 }
 
 .search-input {
@@ -593,7 +594,7 @@ footer {
   margin-bottom: 20px;
 }
 
-.text-content {
+.text-content-Blog {
   flex: auto;
   text-align: center;
 }
