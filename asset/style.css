@@ -82,7 +82,7 @@ Header {
 }
 
 .action_btn {
-  background-color: #9adaef;
+  background-color: #5494E6;
   color: #fff;
   padding: 0.5rem 1rem;
   border: none;
@@ -104,13 +104,13 @@ Header {
 
 .action_btn.register_btn {
   margin-right: 10px;
-  border: 2px solid #9adaef;
+  border: 2px solid #5494E6;
   background-color: transparent;
   color: #000;
 }
 
 .action_btn.register_btn:hover {
-  background-color: #9adaef;
+  background-color: #5494E6;
   color: #fff;
 }
 
@@ -483,7 +483,7 @@ Header {
 }
 
 /* ==================================================
-   Footer
+   Journey
 ================================================== */
 .journey-container {
   max-width: 1200px;
@@ -517,63 +517,91 @@ Header {
    Footer
 ================================================== */
 footer {
-  background-color: #f8f9fa;
+  background-color: #5494E6;
+  color: #ffffff;
+  padding: 20px 0;
 }
 
-.footer-content {
-  display: flex;
-  justify-content: space-around;
+.container-footer {
   max-width: 1200px;
   margin: 0 auto;
-  background-color: #9adaef;
-}
-
-.footer-column {
-  flex: 1;
-  padding: 40px 40px;
   text-align: left;
 }
 
-.footer-column.history {
-  flex: 2.5;
-}
-
-.footer-column.history img {
-  width: 145px;
-  height: auto;
-}
-
-.footer-column h3 {
+.logo-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
   padding-top: 20px;
-  color: #333;
-  margin-bottom: 10px;
 }
 
-.footer-column p {
-  padding-top: 20px;
-  color: #666;
-  line-height: 1.6;
-  margin-bottom: 10px;
+.logo-footer img {
+width: 200px
 }
 
-.footer-column p,
-.footer-column ul {
-  padding-top: 10px;
-  color: #666;
-  font-size: 14px;
-  line-height: 1.6;
-  margin-bottom: 10px;
+.footer-divider {
+  margin-top: 20px;
+  border: 0;
+  border-top: 1px solid #ffffff;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  padding: 40px 40px;
+}
+
+.column {
+  flex: 1;
+  padding-right: 100px;
+}
+
+.column:last-child {
+  padding-right: 0;
+}
+
+.column h3 {
+  font-size: 25px;
+  margin-bottom: 20px;
+  font-weight: 200;
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.column ul li {
+  margin-bottom: 5px;
+}
+
+.column i {
+  margin-right: 10px;
+}
+
+.column ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.column ul li a:hover {
+  text-decoration: underline;
+}
+
+.column p {
+  margin: 0;
 }
 
 .footer-info {
   height: 60px;
   display: flex;
   align-items: center;
-  background-color: #28caff;
+  background-color: #5494E6;
 }
 
 .footer-info p {
-  color: #666;
+  color: #fff;
   font-size: 14px;
   margin: 0 auto;
 }
@@ -816,12 +844,21 @@ footer {
     width: unset;
   }
 
-  .footer-column {
-    padding: 20px;
+  .footer-columns {
+    padding: 10px;
   }
 
-  .footer-column h3 {
-    padding-top: auto;
+  .column {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .logo-footer img {
+    width: 150px;
+  }
+
+  .footer-info p {
+    font-size: 10px;
   }
 
   .search-input {
