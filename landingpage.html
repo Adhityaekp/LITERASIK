@@ -22,13 +22,13 @@
         <a href="#"><img src="asset/image/Logo.png" alt="Logo"></a>
       </div>
       <ul class="links">
-        <li><a href="landingpage.html">Beranda</a></li>
-        <li><a href="hero">Tentang Kami</a></li>
+        <li><a href="landingpage.html" class="focus">Beranda</a></li>
+        <li><a href="TentangKami.html">Tentang Kami</a></li>
         <li><a href="Blog.html">Blog</a></li>
       </ul>
       <li>
         <a href="Login.html" class="action_btn register_btn">Masuk</a>
-        <a href="#" class="action_btn">Daftar</a>
+        <a href="Register.html" class="action_btn">Daftar</a>
       </li>
       <div class="toggle_btn">
         <i class="fa-solid fa-bars"></i>
@@ -36,11 +36,11 @@
     </div>
 
     <div class="dropdown_menu">
-      <li><a href="hero">Beranda</a></li>
-      <li><a href="hero">Tentang Kami</a></li>
-      <li><a href="hero">Blog</a></li>
+      <li><a href="landingpage.html" class="focus">Beranda</a></li>
+      <li><a href="TentangKami.html">Tentang Kami</a></li>
+      <li><a href="Blog.html">Blog</a></li>
       <li><a href="Login.html" class="action_btn register_btn">Masuk</a></li>
-      <li><a href="#" class="action_btn">Daftar</a></li>
+      <li><a href="Register.html" class="action_btn">Daftar</a></li>
     </div>
     </div>
   </header>
@@ -92,6 +92,8 @@
       </div>
     </div>
 
+    <div class="section-divider"></div>
+
     <div class="button-container">
       <button class="button" onclick="showContent('menulis')">
         <h4>Menulis</h4>
@@ -99,14 +101,14 @@
       <button class="button" onclick="showContent('komunitas')">
         <h4>Komunitas</h4>
       </button>
-      <hr class="button-divider">
+      <div class="button-divider"></div>
     </div>
 
     <div id="menulis-content" class="container-menulis">
       <div class="content-menulis">
         <h1>Menulis</h1>
         <p>Wujudkan imajinasi Anda dengan fitur menulis novel yang interaktif!</p>
-        <button class="start-button-menulis">Mulai</button>
+        <button class="start-button-menulis">Buat Sekarang</button>
       </div>
       <div class="image-container-menulis">
         <img src="asset/image/menulis.png" alt="Gambar">
@@ -115,12 +117,12 @@
 
     <div id="komunitas-content" class="container-menulis" style="display: none;">
       <div class="content-menulis">
-        <h1>Komunitas</h1>
-        <p>Temukan dan berinteraksi dengan komunitas menulis yang inspiratif!</p>
-        <button class="start-button-menulis">Mulai</button>
+        <h1>Forum Komunitas</h1>
+        <p>Bergabunglah dengan komunitas belajar yang aktif dan suportif! Bertukar pikiran, ide, dan gagasan.</p>
+        <button class="start-button-menulis">Mulai Diskusi</button>
       </div>
       <div class="image-container-menulis">
-        <img src="asset/image/menulis.png" alt="Gambar">
+        <img src="asset/image/komunitas.png" alt="Gambar">
       </div>
     </div>
 
@@ -223,9 +225,6 @@
       </div>
     </div>
 
-
-
-
   </div>
 
   <!-- Footer -->
@@ -250,15 +249,16 @@
           <ul>
             <li><a href="#"><i class="far fa-envelope"></i> timsupportliterasik@ac.id</a></li>
             <li><a href="#"><i class="fas fa-phone"></i> +62 88987654321</a></li>
-            <li><a href="#"><i class="fas fa-map-marker-alt"></i> Jalan Perintis Kemerdekaan No.7 Jakarta Indonesia</a></li>
+            <li><a href="#"><i class="fas fa-map-marker-alt"></i> Jalan Perintis Kemerdekaan No.7 Jakarta Indonesia</a>
+            </li>
           </ul>
         </div>
         <div class="column">
           <h3>Menu</h3>
           <ul>
-            <li><a href="#">Beranda</a></li>
-            <li><a href="#">Tentang Kami</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="landingpage.html">Beranda</a></li>
+            <li><a href="TentangKami.html">Tentang Kami</a></li>
+            <li><a href="Blog.html">Blog</a></li>
           </ul>
         </div>
       </div>
