@@ -81,8 +81,13 @@ Header {
   display: none;
 }
 
+.links li a.focus {
+  font-weight: 600; 
+  color: #407bff;
+}
+
 .action_btn {
-  background-color: #5494E6;
+  background-color: #5494e6;
   color: #fff;
   padding: 0.5rem 1rem;
   border: none;
@@ -94,8 +99,8 @@ Header {
 }
 
 .action_btn:hover {
-  scale: 1.05;
-  color: #000;
+  background-color: #0056b3;
+  color: #fff;
 }
 
 .action_btn:active {
@@ -104,13 +109,13 @@ Header {
 
 .action_btn.register_btn {
   margin-right: 10px;
-  border: 2px solid #5494E6;
+  border: 2px solid #5494e6;
   background-color: transparent;
   color: #000;
 }
 
 .action_btn.register_btn:hover {
-  background-color: #5494E6;
+  background-color: #5494e6;
   color: #fff;
 }
 
@@ -140,6 +145,11 @@ Header {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.dropdown_menu li a.focus {
+  font-weight: 600; 
+  color: #407bff;
 }
 
 .dropdown_menu .action_btn {
@@ -273,7 +283,7 @@ Header {
 .button {
   background-color: transparent;
   color: #000;
-  padding: 10px 120px;
+  padding: 10px 200px;
   margin: 0 auto;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -291,11 +301,11 @@ Header {
 }
 
 .button-divider {
+  width: 95%;
   max-width: 1200px;
   margin: 0 auto;
-  border: none;
-  border-top: 5px solid #28caff;
-  width: 95%;
+  margin-top: 20px;
+  border-bottom: 2px solid #ccc;
 }
 
 .container-menulis {
@@ -325,7 +335,7 @@ Header {
 .start-button-menulis {
   padding: 10px 70px;
   font-size: 18px;
-  background-color: #28caff;
+  background-color: #5494e6;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -343,6 +353,7 @@ Header {
 .image-container-menulis img {
   max-width: 100%;
   height: auto;
+  padding-left: 100px;
 }
 
 /* ==================================================
@@ -442,6 +453,7 @@ Header {
   margin: 0 auto;
   padding: 20px;
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .event-content {
@@ -504,20 +516,20 @@ Header {
 }
 
 .journey-card img {
-  width: 80%; /* Mengisi lebar kartu */
-  height: 80%;
+  height: 70%;
   border-radius: 8px;
 }
 
 .journey-info {
   text-align: center;
+  padding-top: 20px;
 }
 
 /* ==================================================
    Footer
 ================================================== */
 footer {
-  background-color: #5494E6;
+  background-color: #5494e6;
   color: #ffffff;
   padding: 20px 0;
 }
@@ -536,7 +548,7 @@ footer {
 }
 
 .logo-footer img {
-width: 200px
+  width: 200px;
 }
 
 .footer-divider {
@@ -597,13 +609,55 @@ width: 200px
   height: 60px;
   display: flex;
   align-items: center;
-  background-color: #5494E6;
+  background-color: #5494e6;
 }
 
 .footer-info p {
   color: #fff;
   font-size: 14px;
   margin: 0 auto;
+}
+
+/* ==================================================
+   Tentang Kami Container
+================================================== */
+.Tentang-Kami-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text-content-Tentang-Kami {
+  flex: 1;
+  text-align: left;
+}
+
+.image-container {
+  padding-left: 30px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.image-container2 {
+  padding-right: 30px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
 /* ==================================================
@@ -631,8 +685,16 @@ width: 200px
    Tips Menarik
 ================================================== */
 .tips-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+  text-align: center;
   display: flex;
   flex-direction: column;
+}
+
+.tips-container h2 {
+  padding-top: ;
 }
 
 .tip-card {
@@ -669,87 +731,88 @@ width: 200px
 }
 
 .card-divider {
-  margin-bottom: 20px; 
-  height: 1px; 
+  margin-bottom: 20px;
+  height: 1px;
   background-color: #ccc;
-  border: none; 
-
+  border: none;
 }
 
 /* ==================================================
    FAQ
 ================================================== */
-}
 .accordion {
-    display: flex;
-    flex-direction: column;
-    font-family: "Sora", sans-serif;
-    max-width: 991px;
-    min-width: 320px;
-    margin: 50px auto;
-    padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Quicksand", sans-serif;
+  margin: 30px auto;
+  padding: 0 50px;
 }
 .accordion h1 {
-    font-size: 32px;
-    text-align: center;
+  font-size: 32px;
+  text-align: center;
 }
-.accordion-item {
-    margin-top: 16px;
-    border: 1px solid #fcfcfc;
-    border-radius: 6px;
-    background: #ffffff;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
-}
-.accordion-item .accordion-item-title {
-    position: relative;
-    margin: 0;
-    display: flex;
-    width: 100%;
-    font-size: 15px;
-    cursor: pointer;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-    padding: 14px 20px;
-    box-sizing: border-box;
-    align-items: center;
-}
-.accordion-item .accordion-item-desc {
-    display: none;
-    font-size: 14px;
-    line-height: 22px;
-    font-weight: 300;
-    color: #444;
-    border-top: 1px dashed #ddd;
-    padding: 10px 20px 20px;
-    box-sizing: border-box;
-}
-.accordion-item input[type="checkbox"] {
-    position: absolute;
-    height: 0;
-    width: 0;
-    opacity: 0;
-}
-.accordion-item input[type="checkbox"]:checked ~ .accordion-item-desc {
-    display: block;
-}
-.accordion-item
-    input[type="checkbox"]:checked
-    ~ .accordion-item-title
-    .icon:after {
-    content: "-";
-    font-size: 20px;
-}
-.accordion-item input[type="checkbox"] ~ .accordion-item-title .icon:after {
-    content: "+";
-    font-size: 20px;
-}
-.accordion-item:first-child {
-    margin-top: 0;
-}
-.accordion-item .icon {
-    margin-left: 14px;
+.accordion-columns {
+  display: flex;
+  justify-content: space-between;
 }
 
+.accordion-column {
+  width: calc(50% - 8px);
+}
+
+.accordion-item {
+  margin-top: 16px;
+  border: 1px solid #fcfcfc;
+  border-radius: 6px;
+  background: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  text-align: left;
+}
+
+.accordion-item .accordion-item-title {
+  position: relative;
+  margin: 0;
+  display: flex;
+  width: 100%;
+  font-size: 15px;
+  cursor: pointer;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  padding: 14px 20px;
+  box-sizing: border-box;
+  align-items: center;
+}
+.accordion-item .accordion-item-desc {
+  display: none;
+  font-size: 14px;
+  color: #000;
+  border-top: 1px dashed #ddd;
+  padding: 10px 20px 20px;
+  box-sizing: border-box;
+}
+.accordion-item input[type="checkbox"] {
+  position: absolute;
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+.accordion-item input[type="checkbox"]:checked ~ .accordion-item-desc {
+  display: block;
+}
+.accordion-item input[type="checkbox"]:checked ~ .accordion-item-title .icon:after {
+  content: "-";
+  font-size: 20px;
+}
+.accordion-item input[type="checkbox"] ~ .accordion-item-title .icon:after {
+  content: "+";
+  font-size: 20px;
+}
+.accordion-item:first-child {
+  margin-top: 0;
+}
+.accordion-item .icon {
+  margin-left: 14px;
+}
 
 /* ==================================================
    Responsive
@@ -832,10 +895,10 @@ width: 200px
 
   .accordion {
     padding: 0 16px;
-}
-.accordion h1 {
+  }
+  .accordion h1 {
     font-size: 22px;
-}
+  }
 }
 
 @media (max-width: 576px) {
