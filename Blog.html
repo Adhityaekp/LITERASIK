@@ -23,12 +23,12 @@
       </div>
       <ul class="links">
         <li><a href="landingpage.html">Beranda</a></li>
-        <li><a href="hero">Tentang Kami</a></li>
-        <li><a href="Blog.html">Blog</a></li>
+        <li><a href="TentangKami.html">Tentang Kami</a></li>
+        <li><a href="Blog.html" class="focus">Blog</a></li>
       </ul>
       <li>
         <a href="Login.html" class="action_btn register_btn">Masuk</a>
-        <a href="#" class="action_btn">Daftar</a>
+        <a href="Register.html" class="action_btn">Daftar</a>
       </li>
       <div class="toggle_btn">
         <i class="fa-solid fa-bars"></i>
@@ -36,11 +36,11 @@
     </div>
 
     <div class="dropdown_menu">
-      <li><a href="hero">Beranda</a></li>
-      <li><a href="hero">Tentang Kami</a></li>
-      <li><a href="hero">Blog</a></li>
+      <li><a href="landingpage.html">Beranda</a></li>
+      <li><a href="TentangKami.html">Tentang Kami</a></li>
+      <li><a href="Blog.html" class="focus">Blog</a></li>
       <li><a href="Login.html" class="action_btn register_btn">Masuk</a></li>
-      <li><a href="#" class="action_btn">Daftar</a></li>
+      <li><a href="Register.html" class="action_btn">Daftar</a></li>
     </div>
     </div>
   </header>
@@ -48,33 +48,8 @@
   <div class="content">
     <div class="Blog-container">
       <div class="text-content-Blog">
-        <h1>Berita Terbaru</h1>
-        <div class="news-container">
-          <!-- Card Berita Terbaru -->
-          <div class="news-card">
-            <img src="asset/image/image 60.jpg" alt="Gambar Berita 1">
-            <div class="news-info">
-              <h3>Judul Berita 1</h3>
-              <p class="date">Tanggal Publikasi: 21 Maret 2024</p>
-            </div>
-          </div>
-          <div class="news-card">
-            <img src="asset/image/image 60.jpg" alt="Gambar Berita 1">
-            <div class="news-info">
-              <h3>Judul Berita 1</h3>
-              <p class="date">Tanggal Publikasi: 21 Maret 2024</p>
-            </div>
-          </div>
-          <div class="news-card">
-            <img src="asset/image/image 60.jpg" alt="Gambar Berita 1">
-            <div class="news-info">
-              <h3>Judul Berita 1</h3>
-              <p class="date">Tanggal Publikasi: 21 Maret 2024</p>
-            </div>
-          </div>
-        </div>
-        <h1>Tips Menarik</h1>
         <div class="tips-container">
+          <h2>Tips Menarik</h2>
           <!-- Tip Card 1 -->
           <div class="tip-card">
             <img src="asset/image/image 60.jpg" alt="Gambar Tip 1">
@@ -103,58 +78,71 @@
           </div>
         </div>
         <div class="accordion">
-          <h1>Frequently Asked Questions</h1>
-          <div class="accordion-item">
-            <input type="checkbox" id="accordion1">
-            <label for="accordion1" class="accordion-item-title"><span class="icon"></span>What is SEO, and why is it
-              important for online businesses?</label>
-            <div class="accordion-item-desc">SEO, or Search Engine Optimization, is the practice of optimizing a website
-              to improve its visibility on search engines like Google. It involves various techniques to enhance a
-              site's ranking in search results. SEO is crucial for online businesses as it helps drive organic traffic,
-              increases visibility, and ultimately leads to higher conversions.</div>
-          </div>
-
-          <div class="accordion-item">
-            <input type="checkbox" id="accordion2">
-            <label for="accordion2" class="accordion-item-title"><span class="icon"></span>How long does it take to see
-              results from SEO efforts?</label>
-            <div class="accordion-item-desc">The timeline for seeing results from SEO can vary based on several factors,
-              such as the competitiveness of keywords, the current state of the website, and the effectiveness of the
-              SEO strategy. Generally, it may take several weeks to months before noticeable improvements occur.
-              However, long-term commitment to SEO is essential for sustained success.</div>
-          </div>
-
-          <div class="accordion-item">
-            <input type="checkbox" id="accordion3">
-            <label for="accordion3" class="accordion-item-title"><span class="icon"></span>What are the key components
-              of a successful SEO strategy?</label>
-            <div class="accordion-item-desc">A successful SEO strategy involves various components, including keyword
-              research, on-page optimization, quality content creation, link building, technical SEO, and user
-              experience optimization. These elements work together to improve a website's relevance and authority in
-              the eyes of search engines.</div>
-          </div>
-
-          <div class="accordion-item">
-            <input type="checkbox" id="accordion4">
-            <label for="accordion4" class="accordion-item-title"><span class="icon"></span>How does mobile optimization
-              impact SEO?</label>
-            <div class="accordion-item-desc">Mobile optimization is crucial for SEO because search engines prioritize
-              mobile-friendly websites. With the increasing use of smartphones, search engines like Google consider
-              mobile responsiveness as a ranking factor. Websites that provide a seamless experience on mobile devices
-              are more likely to rank higher in search results.</div>
-          </div>
-
-          <div class="accordion-item">
-            <input type="checkbox" id="accordion5">
-            <label for="accordion5" class="accordion-item-title"><span class="icon"></span>What is the role of backlinks
-              in SEO, and how can they be acquired?</label>
-            <div class="accordion-item-desc">Backlinks, or inbound links from other websites to yours, play a
-              significant role in SEO. They are considered a vote of confidence and can improve a site's authority.
-              Quality over quantity is crucial when acquiring backlinks. Strategies for obtaining backlinks include
-              creating high-quality content, guest posting, reaching out to industry influencers, and participating in
-              community activities. It's important to focus on natural and ethical link-building practices.</div>
+          <h2>Frequently Asked Questions</h2>
+          <div class="accordion-columns">
+            <div class="accordion-column">
+              <div class="accordion-item">
+                <input type="checkbox" id="accordion1">
+                <label for="accordion1" class="accordion-item-title"><span class="icon"></span>Bagaimana cara membuat
+                  akun di Literasik?</label>
+                <div class="accordion-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolore
+                  totam aut voluptates esse fugit vel tempora non laboriosam quod.</div>
+              </div>
+              <div class="accordion-item">
+                <input type="checkbox" id="accordion2">
+                <label for="accordion2" class="accordion-item-title"><span class="icon"></span> cara mencari
+                  konten literasi yang sesuai dengan minat saya?</label>
+                <div class="accordion-item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, earum?
+                  Quisquam, vel expedita. Enim asperiores cupiditate quis magnam hic a!</div>
+              </div>
+              <div class="accordion-item">
+                <input type="checkbox" id="accordion2">
+                <label for="accordion2" class="accordion-item-title"><span class="icon"></span>Apakah saya bisa
+                  menyimpan konten bacaan favorit saya?</label>
+                <div class="accordion-item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, earum?
+                  Quisquam, vel expedita. Enim asperiores cupiditate quis magnam hic a!</div>
+              </div>
+              <div class="accordion-item">
+                <input type="checkbox" id="accordion2">
+                <label for="accordion2" class="accordion-item-title"><span class="icon"></span>Bagaimana caranya
+                  menghubungi pusat bantuan?</label>
+                <div class="accordion-item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, earum?
+                  Quisquam, vel expedita. Enim asperiores cupiditate quis magnam hic a!</div>
+              </div>
+            </div>
+            <div class="accordion-column">
+              <div class="accordion-item">
+                <input type="checkbox" id="accordion3">
+                <label for="accordion3" class="accordion-item-title"><span class="icon"></span>Bagaimana saya bisa
+                  berkomunikasi dengan user lain di dalam website ini?</label>
+                <div class="accordion-item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis
+                  cum, doloribus ea fuga earum et laborum aliquam delectus molestias dolorem.</div>
+              </div>
+              <div class="accordion-item">
+                <input type="checkbox" id="accordion4">
+                <label for="accordion4" class="accordion-item-title"><span class="icon"></span>Apakah saya bisa melihat
+                  riwayat aktivitas saya dalam website ini?</label>
+                <div class="accordion-item-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos
+                  architecto distinctio ipsum omnis fugiat corrupti saepe veritatis dolores, rem et.</div>
+              </div>
+              <div class="accordion-item">
+                <input type="checkbox" id="accordion4">
+                <label for="accordion4" class="accordion-item-title"><span class="icon"></span>Bagaimana cara nya untuk
+                  memberikan ulasan pada buku yang dibaca?</label>
+                <div class="accordion-item-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos
+                  architecto distinctio ipsum omnis fugiat corrupti saepe veritatis dolores, rem et.</div>
+              </div>
+              <div class="accordion-item">
+                <input type="checkbox" id="accordion4">
+                <label for="accordion4" class="accordion-item-title"><span class="icon"></span>Bagaimana saya dapat
+                  mengikuti event yang diadakan komunitas?</label>
+                <div class="accordion-item-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos
+                  architecto distinctio ipsum omnis fugiat corrupti saepe veritatis dolores, rem et.</div>
+              </div>
+            </div>
           </div>
         </div>
+
 
         <div class="journey-container">
           <h2>Mulai Perjalanan Pembelajaranmu Bersama LITERASIK</h2>
@@ -162,20 +150,23 @@
             <div class="journey-card">
               <img src="asset/image/globe.png" alt="Journey Image 1">
               <div class="journey-info">
-                <p>Temukan berbagai macam konten literasi, mulai dari ulasan buku, artikel inspiratif, hingga cerita pendek
+                <p>Temukan berbagai macam konten literasi, mulai dari ulasan buku, artikel inspiratif, hingga cerita
+                  pendek
                   yang memikat.</p>
               </div>
             </div>
             <div class="journey-card">
               <img src="asset/image/naskah.png" alt="Journey Image 2">
               <div class="journey-info">
-                <p>Ambil kesempatan untuk mengekspresikan diri. Mulailah menulis dan membagikan karya tulismu sendiri.</p>
+                <p>Ambil kesempatan untuk mengekspresikan diri. Mulailah menulis dan membagikan karya tulismu sendiri.
+                </p>
               </div>
             </div>
             <div class="journey-card">
               <img src="asset/image/circle.png" alt="Journey Image 3">
               <div class="journey-info">
-                <p>Sambutlah ide dan pandangan Anda dalam komunitas. Bertukar cerita, rekomendasi buku, dan temukan teman
+                <p>Sambutlah ide dan pandangan Anda dalam komunitas. Bertukar cerita, rekomendasi buku, dan temukan
+                  teman
                   sejati yang memiliki hobi serupa.</p>
               </div>
             </div>
@@ -214,9 +205,9 @@
         <div class="column">
           <h3>Menu</h3>
           <ul>
-            <li><a href="#">Beranda</a></li>
-            <li><a href="#">Tentang Kami</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="landingpage.html">Beranda</a></li>
+            <li><a href="TentangKami.html">Tentang Kami</a></li>
+            <li><a href="Blog.html">Blog</a></li>
           </ul>
         </div>
       </div>
