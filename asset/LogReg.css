@@ -33,6 +33,7 @@ body {
   flex: 1;
   background-color: #9adaef;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -40,6 +41,13 @@ body {
 .illustration-container img {
   max-width: 80%;
   height: auto;
+  padding-bottom: 20px;
+}
+
+.illustration-container h2 {
+  max-width: 80%;
+  color: #fff;
+  text-align: center;
 }
 
 .form-container {
@@ -54,7 +62,16 @@ body {
   background-color: white;
 }
 
-.form-container h2 {
+.form-container h3 {
+  max-width: 42%;
+  text-align: center;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+.form-container img {
+  max-width: 200px;
+  height: auto;
   margin-bottom: 20px;
 }
 
@@ -165,4 +182,29 @@ button:hover {
 
 .register-text a:hover {
   text-decoration: underline;
+}
+
+/* CSS untuk popup */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #e3ffe8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  display: none;
+  z-index: 1000;
+  text-align: center;
+}
+
+.popup-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #4bab3c;
+}
 }
