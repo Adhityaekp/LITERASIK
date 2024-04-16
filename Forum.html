@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Literasik</title>
+    <link rel="stylesheet" href="/asset/css-ruangbelajar/forum.css" />
+    <link rel="icon" type="image/x-icon" href="asset/image/Logo literasik.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navigasi Bar -->
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <a href="#"><img src="asset/image/Logo.png" alt="Logo" /></a>
+        </div>
+        <ul class="links">
+          <li><a href="Beranda.html" class="focus">Beranda</a></li>
+          <li><a href="TentangKami2.html">Tentang Kami</a></li>
+          <li><a href="Blog2.html">Blog</a></li>
+        </ul>
+        <div>
+          <a href="Notifikasi.html" class="action_btn notification_btn"><i class="fas fa-bell"></i></a>
+          <a href="Dashboard.html" class="action_btn profile_btn"><i class="fas fa-user"></i> Anonymous</a>
+        </div>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- Button Kembali -->
+    <div>
+      <div class="btn-kembali">
+        <a href="komunitas.html">Kembali</a>
+      </div>
+    </div>
+
+    <!-- Content-->
+    <section>
+      <!-- Items Header -->
+      <div class="header-title">
+        <div>
+          <p><strong>Rekomendasi Novel genre sedih?</strong></p>
+        </div>
+        <div class="title">
+          <p>nrfdhlh01 08 Feb 2024</p>
+          <ul>
+            <li>Balasan</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Tambahkan komentar -->
+      <div class="add-comment">
+        <div class="add-items-comment">
+          <div>
+            <img src="/asset/img-ruangbelajar/profile.svg" alt="profile" />
+          </div>
+          <div>
+            <input type="text" placeholder="Tambahkan Komentar..." />
+          </div>
+        </div>
+        <div>
+          <ul>
+            <li><a href="" class="kirim">Kirim</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- List Komentar 1 -->
+      <div class="list-comment">
+        <div class="items-comment">
+          <div>
+            <img src="/asset/img-ruangbelajar/profile.svg" alt="profile" />
+          </div>
+          <div>
+            <p><strong>Evan_</strong> 09 Feb 2024</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste quae qui, voluptas accusantium nostrum aut assumenda? Ullam nostrum laudantium et animi iste voluptatibus magni maxime, quia modi dolorum quas aspernatur.</p>
+          </div>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <a href=""><strong>Reply</strong></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- List Komentar 2 -->
+      <div class="list-comment">
+        <div class="items-comment">
+          <div>
+            <img src="/asset/img-ruangbelajar/profile.svg" alt="profile" />
+          </div>
+          <div>
+            <p><strong>Anna07</strong> 09 Feb 2024</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste quae qui, voluptas accusantium nostrum aut assumenda? Ullam nostrum laudantium et animi iste voluptatibus magni maxime, quia modi dolorum quas aspernatur.</p>
+          </div>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <a href=""><strong>Reply</strong></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- List Komentar 3 -->
+      <div class="list-comment">
+        <div class="items-comment">
+          <div>
+            <img src="/asset/img-ruangbelajar/profile.svg" alt="profile" />
+          </div>
+          <div>
+            <p><strong>Jinu_11</strong> 09 Feb 2024</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste quae qui, voluptas accusantium nostrum aut assumenda? Ullam nostrum laudantium et animi iste voluptatibus magni maxime, quia modi dolorum quas aspernatur.</p>
+          </div>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <a href=""><strong>Reply</strong></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const toggleBtn = document.querySelector(".toggle_btn");
+      const toggleBtnIcon = document.querySelector(".toggle_btn i");
+      const dropDownMenu = document.querySelector(".dropdown_menu");
+
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle("open");
+        const isOpen = dropDownMenu.classList.contains("open");
+
+        toggleBtnIcon.classList = isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars";
+      };
+    </script>
+  </body>
+</html>

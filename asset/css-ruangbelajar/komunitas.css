@@ -1,0 +1,417 @@
+/* 
+=================================
+|            Library            |
+================================= 
+*/
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* 
+=================================
+|          Body / Based         |
+================================= 
+*/
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+body {
+  background: white;
+}
+
+/* 
+=================================
+|          Navigasi Bar         |
+================================= 
+*/
+/* header {
+  align-items: center;
+  background: white;
+  display: flex;
+  height: 70px;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  padding: 0 40px;
+  width: auto;
+} */
+
+/* Logo Iterasik */
+/* header .logo {
+  margin-top: 8px;
+  width: 120px;
+}
+header img {
+  width: 100%;
+} */
+
+/* Link Navbar */
+/* header nav ul {
+  display: flex;
+}
+header nav ul li a {
+  color: black;
+  display: block;
+  margin: 0 2px;
+  font-weight: 400;
+  padding: 2px 18px;
+  transition: 0.2s;
+  border-radius: 30px;
+}
+header nav ul li a.daftar {
+  background-color: dodgerblue;
+  color: white;
+}
+header nav ul li a:hover {
+  background-color: rgb(169, 212, 255);
+  color: rgb(0, 0, 0);
+} */
+
+/* 
+=================================
+|            Content            |
+================================= 
+*/
+hr {
+  margin: 20px 13%;
+}
+
+section {
+  margin: 25vh 0px;
+}
+
+/* Items Header */
+section .header-title {
+  align-items: center;
+  background: white;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  height: 70%;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding: 0 40px;
+  width: 80%;
+}
+section .title {
+  display: flex;
+  margin-top: 8px;
+  width: 120px;
+}
+section .title p {
+  opacity: 0.5;
+}
+section ul {
+  display: flex;
+}
+section ul li a {
+  border-radius: 10px;
+  color: black;
+  display: block;
+  font-weight: 400;
+  margin: 0 2px;
+  padding: 8px 18px;
+  transition: 0.2s;
+}
+section ul li a.buat-postingan {
+  background-color: dodgerblue;
+  color: white;
+}
+section ul li a.buat-postingan:hover {
+  background-color: rgb(169, 212, 255);
+  color: black;
+}
+
+/* List Komunitas */
+section .list-content {
+  align-items: center;
+  background: white;
+  display: flex;
+  height: 70%;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 40px;
+  width: 80%;
+}
+section .items-content {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: auto;
+}
+section .items-content img {
+  width: 50px;
+}
+section .items-content a {
+  display: flex;
+  gap: 10px;
+}
+
+/* 
+=================================
+|          Navigasi Bar         |
+================================= 
+*/
+/* Header */
+a {
+  font-family: "Nunito", sans-serif;
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+}
+
+a:hover {
+  color: #407bff;
+}
+li {
+  list-style: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.navbar {
+  width: 95%;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+}
+
+.navbar .links {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar .toggle_btn {
+  color: #000;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.links li a.focus {
+  font-weight: 600;
+  color: #407bff;
+}
+
+.action_btn {
+  background-color: #5494e6;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.action_btn:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+.action_btn:active {
+  scale: 0.95;
+}
+
+.action_btn.register_btn {
+  margin-right: 10px;
+  border: 2px solid #5494e6;
+  background-color: transparent;
+  color: #000;
+}
+
+.action_btn.register_btn:hover {
+  background-color: #5494e6;
+  color: #fff;
+}
+
+/* Dropdown Menu */
+.dropdown_menu {
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 60px;
+  height: 0;
+  width: 300px;
+  background: rgba(255, 255, 255, 100);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+  height: 270px;
+}
+
+.dropdown_menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown_menu li a.focus {
+  font-weight: 600;
+  color: #407bff;
+}
+
+.dropdown_menu .action_btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.dropdown_menu .action_btn.register_btn {
+  margin: auto;
+}
+
+/* 
+=================================
+|           Responsive          |
+================================= 
+*/
+@media (max-width: 992px) {
+  .navbar .links,
+  .navbar .action_btn {
+    display: none;
+  }
+
+  .navbar .toggle_btn {
+    display: block;
+  }
+
+  .dropdown_menu {
+    display: block;
+  }
+
+  .footer-content {
+    flex-wrap: wrap;
+  }
+  .footer-column {
+    flex: 1 0 100%;
+    padding: 20px 40px;
+    text-align: left;
+  }
+
+  .footer-column h3 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .landing-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .text-content {
+    margin-bottom: 20px;
+  }
+
+  .search-input {
+    width: 90%;
+  }
+
+  .services-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .service-card {
+    width: calc(100% - 20px);
+    margin: 10px;
+  }
+
+  .button {
+    padding: 10px 60px;
+  }
+
+  .start-button-menulis {
+    padding: 10px 40px;
+    font-size: 16px;
+  }
+
+  .article-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .article-card {
+    margin: 10px;
+  }
+
+  .accordion {
+    padding: 0 16px;
+  }
+  .accordion h1 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 576px) {
+  .dropdown_menu {
+    left: 2rem;
+    width: unset;
+  }
+
+  .footer-columns {
+    padding: 10px;
+  }
+
+  .column {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .logo-footer img {
+    width: 150px;
+  }
+
+  .footer-info p {
+    font-size: 10px;
+  }
+
+  .search-input {
+    padding: 8px 20px 8px 40px;
+  }
+
+  .service-card {
+    width: calc(100% - 20px);
+    margin: 10px;
+  }
+
+  .button {
+    padding: 10px 60px;
+  }
+
+  .start-button-menulis {
+    padding: 10px 40px;
+    font-size: 16px;
+  }
+
+  .article-card {
+    width: calc(100% - 20px);
+    margin: 10px 0;
+  }
+}

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Literasik</title>
+    <link rel="stylesheet" href="/asset/css-ruangbelajar/karyaku2.css" />
+    <link rel="icon" type="image/x-icon" href="asset/image/Logo literasik.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navigasi Bar -->
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <a href="#"><img src="asset/image/Logo.png" alt="Logo" /></a>
+        </div>
+        <ul class="links">
+          <li><a href="Beranda.html" class="focus">Beranda</a></li>
+          <li><a href="TentangKami2.html">Tentang Kami</a></li>
+          <li><a href="Blog2.html">Blog</a></li>
+        </ul>
+        <div>
+          <a href="Notifikasi.html" class="action_btn notification_btn"><i class="fas fa-bell"></i></a>
+          <a href="Dashboard.html" class="action_btn profile_btn"><i class="fas fa-user"></i> Anonymous</a>
+        </div>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- Button Kembali -->
+    <div class="btn-kembali">
+      <a href="karyaku.html">Kembali</a>
+    </div>
+
+    <!-- Content -->
+    <section>
+      <!-- Keterangan Buku -->
+      <div class="row">
+        <div class="col">
+          <img src="/asset/img-ruangbelajar/e-book2.png" alt="e-book2" />
+          <a href="karyaku3.html">Edit</a>
+        </div>
+        <div class="col-information">
+          <div>
+            <strong>Judul</strong>
+          </div>
+          <div>
+            <strong>Dekripsi</strong>
+          </div>
+          <div>
+            <strong>Genre</strong>
+          </div>
+          <div>
+            <strong>Hak Cipta</strong>
+          </div>
+        </div>
+        <div class="col-information">
+          <div>
+            <p>Bicara Ada Itu Seninya</p>
+          </div>
+          <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet</p>
+          </div>
+          <div>
+            <p>Drama</p>
+          </div>
+          <div>
+            <p>Agung Sedayu</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Title -->
+      <div>
+        <h3>Bagian</h3>
+      </div>
+
+      <!-- Items Bagian -->
+      <!-- Bagian 1 -->
+      <div class="row">
+        <nav>
+          <ul>
+            <li>
+              <div class="part">
+                <p>Lorem Ipsum</p>
+                <p>DD/MM/YY</p>
+                <div class="share-message">
+                  <a href=""><img src="/asset/img-ruangbelajar/icon-message.png" alt="icon-message" /></a>
+                  <a href=""><img src="/asset/img-ruangbelajar/icon-share.png" alt="icon-share" /></a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Button Check, Delete, Edit -->
+        <nav>
+          <ul class="buttons">
+            <li>
+              <a href="karyaku3.html" class="edit"><img src="/asset/img-ruangbelajar/icon-edit.png" alt="icon-edit" /></a>
+            </li>
+            <li>
+              <a onclick="showPopupDihapus()" class="delete"><img src="/asset/img-ruangbelajar/icon-delete.png" alt="icon-delete" /></a>
+            </li>
+            <li>
+              <a onclick="showPopupPublikasi()" class="simpan"><img src="/asset/img-ruangbelajar/icon-check.png" alt="icon-check" /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Bagian 2 -->
+      <div class="row">
+        <nav>
+          <ul>
+            <li>
+              <div class="part">
+                <p>Lorem Ipsum</p>
+                <p>DD/MM/YY</p>
+                <div class="share-message">
+                  <a href=""><img src="/asset/img-ruangbelajar/icon-message.png" alt="icon-message" /></a>
+                  <a href=""><img src="/asset/img-ruangbelajar/icon-share.png" alt="icon-share" /></a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Button Check, Delete, Edit -->
+        <nav>
+          <ul class="buttons">
+            <li>
+              <a href="karyaku3.html" class="edit"><img src="/asset/img-ruangbelajar/icon-edit.png" alt="icon-edit" /></a>
+            </li>
+            <li>
+              <a onclick="showPopupDihapus()" class="delete"><img src="/asset/img-ruangbelajar/icon-delete.png" alt="icon-delete" /></a>
+            </li>
+            <li>
+              <a onclick="showPopupPublikasi()" class="simpan"><img src="/asset/img-ruangbelajar/icon-check.png" alt="icon-check" /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Bagian 3 -->
+      <div class="add-part">
+        <div>
+          <a href="karyaku3.html" class="btn-add-part"><p>+</p></a>
+        </div>
+      </div>
+
+      <!-- Pop Up -->
+      <div>
+        <!-- Disimpan -->
+        <div id="popup-disimpan" class="popup">
+          <div class="content">
+            <h4>
+              <img src="/asset/img-ruangbelajar/icon-edit.png" alt="icon-edit" />Karya Berhasil <span><p>Disimpan!</p></span>
+            </h4>
+          </div>
+        </div>
+
+        <!-- Dihapus -->
+        <div id="popup-dihapus" class="popup">
+          <div class="content">
+            <h4>
+              <img src="/asset/img-ruangbelajar/icon-delete.png" alt="icon-delete" />Karya Berhasil <span><p>Dihapus!</p></span>
+            </h4>
+          </div>
+        </div>
+
+        <!-- Publikasi -->
+        <div id="popup-publikasi" class="popup">
+          <div class="content">
+            <h4>
+              <img src="/asset/img-ruangbelajar/icon-check.png" alt="icon-check" />Karya Berhasil <span><p>Publikasi!</p></span>
+            </h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const toggleBtn = document.querySelector(".toggle_btn");
+      const toggleBtnIcon = document.querySelector(".toggle_btn i");
+      const dropDownMenu = document.querySelector(".dropdown_menu");
+
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle("open");
+        const isOpen = dropDownMenu.classList.contains("open");
+
+        toggleBtnIcon.classList = isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars";
+      };
+
+      /* 
+      Fungsi untuk menampilkan pop up menyimpan dan menutup secara otomatis 
+      dalam waktu 1 detik 30. (1300)
+      */
+      function showPopupDisimpan() {
+        var popup = document.getElementById("popup-disimpan");
+        popup.style.display = "block";
+
+        setTimeout(function () {
+          window.location.href = "karyaku2.html";
+        }, 1300);
+      }
+
+      /* 
+      Fungsi untuk menampilkan pop up menghapus dan menutup secara otomatis 
+      dalam waktu 1 detik 30. (1300)
+      */
+      function showPopupDihapus() {
+        var popup = document.getElementById("popup-dihapus");
+        popup.style.display = "block";
+
+        setTimeout(function () {
+          window.location.href = "karyaku2.html";
+        }, 1300);
+      }
+
+      /* 
+      Fungsi untuk menampilkan pop up publikasi dan menutup secara otomatis 
+      dalam waktu 1 detik 30. (1300)
+      */
+      function showPopupPublikasi() {
+        var popup = document.getElementById("popup-publikasi");
+        popup.style.display = "block";
+
+        setTimeout(function () {
+          window.location.href = "karyaku2.html";
+        }, 1300);
+      }
+    </script>
+  </body>
+</html>
