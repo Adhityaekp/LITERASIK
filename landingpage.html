@@ -40,150 +40,177 @@
       <li><a href="TentangKami.html">Tentang Kami</a></li>
       <li><a href="Blog.html">Blog</a></li>
       <li><a href="Login.html" class="action_btn register_btn">Masuk</a></li>
-      <li><a href="Register.html" class="action_btn">Daftar</a></li>
+      <li><a href="Register.html" class="action_btn login">Daftar</a></li>
     </div>
     </div>
   </header>
 
   <div class="content">
     <div class="landing-container">
-      <div class="text-content">
-        <h1>Menyemai Benih Pengetahuan, Membangun Masa Depan</h1>
-        <p>Temukan yang kamu cari disini!</p>
-        <div class="search-container">
-          <input type="text" class="search-input"
-            placeholder="Masukan kata kunci (contoh: judul buku, berita, nama event, dll)">
+        <div class="text-content">
+            <h1>Menyemai Benih Pengetahuan, Membangun Masa Depan</h1>
+            <p>Temukan yang kamu cari disini!</p>
+            <div class="search-container">
+                <input type="text" class="search-input"
+                    placeholder="Masukan kata kunci (contoh: judul buku, berita, nama event, dll)">
+            </div>
         </div>
-      </div>
-      <div class="image-content">
-        <img src="asset/image/rafiki.png" alt="Contoh Gambar">
-      </div>
+        <div class="image-content">
+            <img src="asset/image/rafiki.png" alt="Contoh Gambar">
+        </div>
     </div>
 
     <div class="container-title">
-      <h2>Layanan Kami</h2>
+        <h2>Layanan Kami</h2>
     </div>
 
     <div class="services-container">
-      <!-- Card 1 -->
-      <a href="halaman-baru1.html" class="service-link">
-        <div class="service-card">
-          <img src="asset/image/card1.png" alt="Gambar 1">
-          <div class="service-content">
-            <h2>Ruang Belajar (7-12)</h2>
-            <p>Temukan berbagai konten pembelajaran dalam bentuk video, audio, bacaan dan permainan yang menyenangkan.
-            </p>
-          </div>
-        </div>
-      </a>
-      <!-- Card 2 -->
-      <a href="halaman-baru2.html" class="service-link">
-        <div class="service-card">
-          <img src="asset/image/card2.png" alt="Gambar 2">
-          <div class="service-content">
-            <h2>Ruang Belajar (13-18)</h2>
-            <p>Temukan berbagai konten pembelajaran dalam bentuk video, audio, bacaan.</p>
-          </div>
-        </div>
-      </a>
-      <!-- Card 3 -->
-      <a href="halaman-baru3.html" class="service-link">
-        <div class="service-card">
-          <img src="asset/image/card3.png" alt="Gambar 3">
-          <div class="service-content">
-            <h2>Buku Bacaan (Umum)</h2>
-            <p>Temukan bacaan untuk setiap suasana hati dan momen! Dengan beragam pilihan genre dan kategori, fitur
-              buku.</p>
-          </div>
-        </div>
-      </a>
+        <!-- Card 1 -->
+        <a href="Login.html" class="service-link">
+            <div class="service-card">
+                <img src="asset/image/card1.png" alt="Gambar 1">
+                <div class="service-content">
+                    <h2>Ruang Belajar (7-12)</h2>
+                    <p>Temukan berbagai konten pembelajaran dalam bentuk video, audio, bacaan dan permainan yang
+                        menyenangkan.
+                    </p>
+                </div>
+            </div>
+        </a>
+        <!-- Card 2 -->
+        <a href="Login.html" class="service-link">
+            <div class="service-card">
+                <img src="asset/image/card2.png" alt="Gambar 2">
+                <div class="service-content">
+                    <h2>Ruang Belajar (13-18)</h2>
+                    <p>Temukan berbagai konten pembelajaran dalam bentuk video, audio, bacaan.</p>
+                </div>
+            </div>
+        </a>
+        <!-- Card 3 -->
+        <a href="Login.html" class="service-link">
+            <div class="service-card">
+                <img src="asset/image/card3.png" alt="Gambar 3">
+                <div class="service-content">
+                    <h2>Buku Bacaan (Umum)</h2>
+                    <p>Temukan bacaan untuk setiap suasana hati dan momen! Dengan beragam pilihan genre dan
+                        kategori, fitur
+                        buku.</p>
+                </div>
+            </div>
+        </a>
     </div>
 
     <div class="section-divider"></div>
 
     <div class="button-container">
-      <button class="button" onclick="showContent('menulis')">
-        <h4>Menulis</h4>
-      </button>
-      <button class="button" onclick="showContent('komunitas')">
-        <h4>Komunitas</h4>
-      </button>
-      <div class="button-divider"></div>
+        <button class="button" onclick="showContent('menulis', this)">
+            <h4>Menulis</h4>
+        </button>
+        <button class="button" onclick="showContent('komunitas', this)">
+            <h4>Komunitas</h4>
+        </button>
+        <div class="button-divider"></div>
     </div>
 
     <div id="menulis-content" class="container-menulis">
-      <div class="content-menulis">
-        <h1>Menulis</h1>
-        <p>Wujudkan imajinasi Anda dengan fitur menulis novel yang interaktif!</p>
-        <button class="start-button-menulis">Buat Sekarang</button>
-      </div>
-      <div class="image-container-menulis">
-        <img src="asset/image/menulis.png" alt="Gambar">
-      </div>
+        <div class="content-menulis">
+            <h1>Menulis</h1>
+            <p>Wujudkan imajinasi Anda dengan fitur menulis novel yang interaktif!</p>
+            <a href="login.html" class="start-button-menulis">Buat Sekarang</a>
+        </div>
+        <div class="image-container-menulis">
+            <img src="asset/image/menulis.png" alt="Gambar">
+        </div>
     </div>
 
     <div id="komunitas-content" class="container-menulis" style="display: none;">
-      <div class="content-menulis">
-        <h1>Forum Komunitas</h1>
-        <p>Bergabunglah dengan komunitas belajar yang aktif dan suportif! Bertukar pikiran, ide, dan gagasan.</p>
-        <button class="start-button-menulis">Mulai Diskusi</button>
-      </div>
-      <div class="image-container-menulis">
-        <img src="asset/image/komunitas.png" alt="Gambar">
-      </div>
+        <div class="content-menulis">
+            <h1>Forum Komunitas</h1>
+            <p>Bergabunglah dengan komunitas belajar yang aktif dan suportif! Bertukar pikiran, ide, dan gagasan.
+            </p>
+            <a href="login.html" class="start-button-menulis">Mulai Diskusi</a>
+        </div>
+        <div class="image-container-menulis">
+            <img src="asset/image/komunitas.png" alt="Gambar">
+        </div>
     </div>
 
     <!-- Garis bawah -->
     <div class="section-divider"></div>
 
     <div class="container-title">
-      <h2>Layanan Kami</h2>
+        <h2>Artikel Inspiratif</h2>
     </div>
 
     <!-- Artikel Inspiratif -->
     <div class="article-container">
-      <!-- Card Artikel 1 -->
-      <div class="article-card">
-        <img src="asset/image/image 66.jpg" alt="Foto Artikel 1">
-        <h3>Judul Artikel 1</h3>
-        <p>Kutipan singkat tentang artikel ini.</p>
-        <p class="date">Tanggal Publikasi: 17 Maret 2024</p>
-      </div>
-      <!-- Card Artikel 2 -->
-      <div class="article-card">
-        <img src="asset/image/image 66.jpg" alt="Foto Artikel 2">
-        <h3>Judul Artikel 2</h3>
-        <p>Kutipan singkat tentang artikel ini.</p>
-        <p class="date">Tanggal Publikasi: 18 Maret 2024</p>
-      </div>
-      <!-- Card Artikel 3 -->
-      <div class="article-card">
-        <img src="asset/image/image 66.jpg" alt="Foto Artikel 3">
-        <h3>Judul Artikel 3</h3>
-        <p>Kutipan singkat tentang artikel ini.</p>
-        <p class="date">Tanggal Publikasi: 19 Maret 2024</p>
-      </div>
-      <!-- Card Artikel 4 -->
-      <div class="article-card">
-        <img src="asset/image/image 66.jpg" alt="Foto Artikel 3">
-        <h3>Judul Artikel 3</h3>
-        <p>Kutipan singkat tentang artikel ini.</p>
-        <p class="date">Tanggal Publikasi: 19 Maret 2024</p>
-      </div>
-      <!-- Card Artikel 4 -->
-      <div class="article-card">
-        <img src="asset/image/image 66.jpg" alt="Foto Artikel 3">
-        <h3>Judul Artikel 3</h3>
-        <p>Kutipan singkat tentang artikel ini.</p>
-        <p class="date">Tanggal Publikasi: 19 Maret 2024</p>
-      </div>
-      <!-- Card Artikel 4 -->
-      <div class="article-card">
-        <img src="asset/image/image 66.jpg" alt="Foto Artikel 3">
-        <h3>Judul Artikel 3</h3>
-        <p>Kutipan singkat tentang artikel ini.</p>
-        <p class="date">Tanggal Publikasi: 19 Maret 2024</p>
-      </div>
+        <!-- Card Artikel 1 -->
+        <a href="Login.html">
+            <div class="article-card">
+                <img src="asset/image/Artikell.jpg" alt="Foto Artikel 1">
+                <h3>Kisah Anak Tukang Becak Indonesia yang ...</h3>
+                <p>Foto Raeni yang diantar oleh sang<br>ayah menggunakan ...</p>
+                <div class="date">
+                    <i class="far fa-clock"></i>2024-03-08 11:30
+                </div>
+            </div>
+        </a>
+        <!-- Card Artikel 2 -->
+        <a href="Login.html">
+            <div class="article-card">
+                <img src="asset/image/Artikell.jpg" alt="Foto Artikel 1">
+                <h3>Kisah Anak Tukang Becak Indonesia yang ...</h3>
+                <p>Foto Raeni yang diantar oleh sang<br>ayah menggunakan ...</p>
+                <div class="date">
+                    <i class="far fa-clock"></i>2024-03-08 11:30
+                </div>
+            </div>
+        </a>
+        <!-- Card Artikel 3 -->
+        <a href="Login.html">
+            <div class="article-card">
+                <img src="asset/image/Artikell.jpg" alt="Foto Artikel 1">
+                <h3>Kisah Anak Tukang Becak Indonesia yang ...</h3>
+                <p>Foto Raeni yang diantar oleh sang<br>ayah menggunakan ...</p>
+                <div class="date">
+                    <i class="far fa-clock"></i>2024-03-08 11:30
+                </div>
+            </div>
+        </a>
+        <!-- Card Artikel 4 -->
+        <a href="Login.html">
+            <div class="article-card">
+                <img src="asset/image/Artikell.jpg" alt="Foto Artikel 1">
+                <h3>Kisah Anak Tukang Becak Indonesia yang ...</h3>
+                <p>Foto Raeni yang diantar oleh sang<br>ayah menggunakan ...</p>
+                <div class="date">
+                    <i class="far fa-clock"></i>2024-03-08 11:30
+                </div>
+            </div>
+        </a>
+        <!-- Card Artikel 4 -->
+        <a href="Login.html">
+            <div class="article-card">
+                <img src="asset/image/Artikell.jpg" alt="Foto Artikel 1">
+                <h3>Kisah Anak Tukang Becak Indonesia yang ...</h3>
+                <p>Foto Raeni yang diantar oleh sang<br>ayah menggunakan ...</p>
+                <div class="date">
+                    <i class="far fa-clock"></i>2024-03-08 11:30
+                </div>
+            </div>
+        </a>
+        <!-- Card Artikel 4 -->
+        <a href="Login.html">
+            <div class="article-card">
+                <img src="asset/image/Artikell.jpg" alt="Foto Artikel 1">
+                <h3>Kisah Anak Tukang Becak Indonesia yang ...</h3>
+                <p>Foto Raeni yang diantar oleh sang<br>ayah menggunakan ...</p>
+                <div class="date">
+                    <i class="far fa-clock"></i>2024-03-08 11:30
+                </div>
+            </div>
+        </a>
     </div>
 
     <!-- Garis bawah -->
@@ -191,48 +218,76 @@
 
     <!-- Card untuk Berita Terbaru -->
     <div class="container-title">
-      <h2>Berita Baru</h2>
+        <h2>Berita Baru</h2>
     </div>
     <div class="news-container">
-      <!-- Card Berita Terbaru -->
-      <div class="news-card">
-        <img src="asset/image/image 60.jpg" alt="Gambar Berita 1">
-        <div class="news-info">
-          <h3>Judul Berita 1</h3>
-          <p class="date">Tanggal Publikasi: 21 Maret 2024</p>
+        <div class="card">
+            <div class="card-image">
+                <img src="asset/image/Berita1.jpg" alt="Gambar Berita 1">
+                <div class="overlay">
+                    <h2>Unair Beri Sanksi Mahasiswa yang Lakukan Plagiarisme Makalah
+                    </h2>
+                    <div class="date">
+                        <i class="far fa-clock"></i> 2024-03-08 11:40
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="news-card">
-        <img src="asset/image/image 60.jpg" alt="Gambar Berita 1">
-        <div class="news-info">
-          <h3>Judul Berita 1</h3>
-          <p class="date">Tanggal Publikasi: 21 Maret 2024</p>
+        <div class="card">
+            <div class="card-image">
+                <img src="asset/image/Berita1.jpg" alt="Gambar Berita 1">
+                <div class="overlay">
+                    <h2>Unair Beri Sanksi Mahasiswa yang Lakukan Plagiarisme Makalah
+                    </h2>
+                    <div class="date">
+                        <i class="far fa-clock"></i> 2024-03-08 11:40
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="news-card">
-        <img src="asset/image/image 60.jpg" alt="Gambar Berita 1">
-        <div class="news-info">
-          <h3>Judul Berita 1</h3>
-          <p class="date">Tanggal Publikasi: 21 Maret 2024</p>
+        <div class="card">
+            <div class="card-image">
+                <img src="asset/image/Berita1.jpg" alt="Gambar Berita 1">
+                <div class="overlay">
+                    <h2>Unair Beri Sanksi Mahasiswa yang Lakukan Plagiarisme Makalah
+                    </h2>
+                    <div class="date">
+                        <i class="far fa-clock"></i> 2024-03-08 11:40
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+        <div class="card">
+            <div class="card-image">
+                <img src="asset/image/Berita1.jpg" alt="Gambar Berita 1">
+                <div class="overlay">
+                    <h2>Unair Beri Sanksi Mahasiswa yang Lakukan Plagiarisme Makalah
+                    </h2>
+                    <div class="date">
+                        <i class="far fa-clock"></i> 2024-03-08 11:40
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Sisipkan card lainnya di sini sesuai kebutuhan -->
     </div>
 
     <div class="event-container">
-      <div class="event-content">
-        <div class="event-info">
-          <button class="register-button">Daftar disini > </button>
-          <h2>Ikuti Event yang Tersedia Disini!</h2>
-          <p>Mari temukan serunya setiap momen dan bergabunglah dalam pengalaman yang tidak hanya menghibur tetapi juga
-            memberikan inspirasi.</p>
+        <div class="event-content">
+            <div class="event-info">
+                <button class="register-button"><a href="login.html">Daftar disini ></a></button>
+                <h2>Ikuti Event yang Tersedia Disini!</h2>
+                <p>Mari temukan serunya setiap momen dan bergabunglah dalam pengalaman yang tidak hanya menghibur
+                    tetapi juga
+                    memberikan inspirasi.</p>
+            </div>
+            <div class="event-illustration">
+                <img src="asset/image/event.png" alt="Ilustrasi Event">
+            </div>
         </div>
-        <div class="event-illustration">
-          <img src="asset/image/event.png" alt="Ilustrasi Event">
-        </div>
-      </div>
     </div>
 
-  </div>
+</div>
 
   <!-- Footer -->
   <footer>
@@ -282,23 +337,66 @@
     const dropDownMenu = document.querySelector('.dropdown_menu')
 
     toggleBtn.onclick = function () {
-      dropDownMenu.classList.toggle('open')
-      const isOpen = dropDownMenu.classList.contains('open')
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
 
-      toggleBtnIcon.classList = isOpen
-        ? 'fa-solid fa-xmark'
-        : 'fa-solid fa-bars'
+        toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
     }
 
-    function showContent(contentName) {
-      var contents = document.querySelectorAll('.container-menulis');
-      for (var i = 0; i < contents.length; i++) {
-        contents[i].style.display = 'none';
-      }
-      document.getElementById(contentName + '-content').style.display = 'flex';
+    document.addEventListener("DOMContentLoaded", function () {
+        let currentIndex = 0;
+        const newsItems = document.querySelectorAll(".news-item");
+        const totalItems = newsItems.length;
+
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % totalItems;
+            const offset = currentIndex * newsItems[0].offsetWidth;
+            document.querySelector(".news-container").scrollLeft = offset;
+        }, 3000); 
+    });
+
+    function showContent(contentName, button) {
+        var contents = document.querySelectorAll('.container-menulis');
+        for (var i = 0; i < contents.length; i++) {
+            contents[i].style.display = 'none';
+        }
+        var buttons = document.querySelectorAll('.button');
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].classList.remove('focused-button');
+        }
+        document.getElementById(contentName + '-content').style.display = 'flex';
+        button.classList.add('focused-button');
     }
 
-  </script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const cards = document.querySelectorAll('.card');
+
+        cards.forEach(card => {
+            card.addEventListener('click', function () {
+                window.location.href = "Login.html";
+            });
+        });
+
+        const newsContainer = document.querySelector('.news-container');
+        let scrollAmount = 0;
+        const scrollIncrement = newsContainer.offsetWidth / 2;
+
+        setInterval(() => {
+            scrollAmount += scrollIncrement;
+            if (scrollAmount > newsContainer.scrollWidth - newsContainer.offsetWidth) {
+                scrollAmount = 0;
+            }
+            newsContainer.scrollTo({
+                top: 0,
+                left: scrollAmount,
+                behavior: 'smooth'
+            });
+        }, 3000);
+    });
+
+</script>
 </body>
 
 </html>
