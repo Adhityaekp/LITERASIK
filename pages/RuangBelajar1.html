@@ -13,12 +13,12 @@
     />
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="asset/style.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
     <title>Literasik</title>
-    <link rel="icon" type="image/x-icon" href="asset/image/Logo literasik.png" />
+    <link rel="icon" type="image/x-icon" href="../assets/image/Logo literasik.png" />
     <style>
       .background-Ruang-Belajar {
-        background-image: url("asset/image/BG-RuangBelajar.jpg");
+        background-image: url("../assets/image/BG-RuangBelajar.jpg");
         background-size: cover;
         background-position: center;
       }
@@ -30,7 +30,7 @@
         width: 63%;
         height: 40px;
         background-color: #5494e6;
-        background-image: url("asset/image/search.png");
+        background-image: url("../assets/image/search.png");
         background-size: 20px;
         background-position: 10px center;
         background-repeat: no-repeat;
@@ -39,12 +39,11 @@
     </style>
   </head>
 
-  <body>
-    <!-- Header -->
+  <body class="background-Ruang-Belajar">
     <header>
       <div class="navbar">
         <div class="logo">
-          <a href="#"><img src="asset/image/Logo.png" alt="Logo" /></a>
+          <a href="#"><img src="../assets/image/Logo.png" alt="Logo" /></a>
         </div>
         <ul class="links">
           <li><a href="Beranda.html">Beranda</a></li>
@@ -67,39 +66,104 @@
       </div>
     </header>
 
-    <main>
-      <div class="RB2-container">
-        <h1>Temukan berbagai konten pembelajaran dalam bentuk bacaan, audio, dan video.</h1>
-        <div class="categoriesSearch">
-          <p>Telusuri berbagai konten edukasi menarik!</p>
-          <div class="searchContainer">
-            <div class="flexContainer">
-              <select id="edu-content">
-                <option>Pilih Jenis Pembelajaran</option>
-                <option>Konten 1</option>
-                <option>Konten 2</option>
-              </select>
-            </div>
-            <div class="flexContainer">
-              <select id="edu-content">
-                <option>Pilih Tipe Konten</option>
-                <option>Konten 1</option>
-                <option>Konten 2</option>
-              </select>
-            </div>
+    <div class="content">
+      <div class="RB1-container">
+        <div class="left-column">
+          <h1>Ayo Bermain Dan Belajar Dengan Game Edukasi Yang Menyenangkan!</h1>
+          <h4>Telusuri berbagai konten edukasi menarik!</h4>
+          <div class="flex-container">
+            <select id="edu-content">
+              <option>Pilih Tipe Konten</option>
+              <option>Konten 1</option>
+              <option>Konten 2</option>
+            </select>
             <div class="search-containerRB">
               <input type="text" id="search-inputRB" placeholder="Cari konten..." />
             </div>
           </div>
         </div>
+        <div class="right-column">
+          <div class="material-card-container">
+            <div class="material-card">
+              <img src="../assets/image/membandingkan.jpg" alt="Materi 1" />
+              <div class="card-details">
+                <h3>Membandingkan</h3>
+                <p>Game</p>
+              </div>
+            </div>
+            <div class="material-card">
+              <img src="../assets/image/membandingkan.jpg" alt="Materi 1" />
+              <div class="card-details">
+                <h3>Membandingkan</h3>
+                <p>Game</p>
+              </div>
+            </div>
+            <div class="material-card">
+              <img src="../assets/image/membandingkan.jpg" alt="Materi 1" />
+              <div class="card-details">
+                <h3>Membandingkan</h3>
+                <p>Game</p>
+              </div>
+            </div>
+            <div class="material-card">
+              <img src="../assets/image/membandingkan.jpg" alt="Materi 1" />
+              <div class="card-details">
+                <h3>Membandingkan</h3>
+                <p>Game</p>
+              </div>
+            </div>
+            <div class="material-card">
+              <img src="../assets/image/membandingkan.jpg" alt="Materi 1" />
+              <div class="card-details">
+                <h3>Membandingkan</h3>
+                <p>Game</p>
+              </div>
+            </div>
+            <div class="material-card">
+              <img src="../assets/image/membandingkan.jpg" alt="Materi 1" />
+              <div class="card-details">
+                <h3>Membandingkan</h3>
+                <p>Game</p>
+              </div>
+            </div>
+            <div class="material-card">
+              <img src="../assets/image/membandingkan.jpg" alt="Materi 1" />
+              <div class="card-details">
+                <h3>Membandingkan</h3>
+                <p>Game</p>
+              </div>
+            </div>
+            <div class="material-card">
+              <img src="../assets/image/membandingkan.jpg" alt="Materi 1" />
+              <div class="card-details">
+                <h3>Membandingkan</h3>
+                <p>Game</p>
+              </div>
+            </div>
+            <div class="material-card">
+              <img src="../assets/image/membandingkan.jpg" alt="Materi 1" />
+              <div class="card-details">
+                <h3>Membandingkan</h3>
+                <p>Game</p>
+              </div>
+            </div>
+            <div class="slider-controls">
+              <span class="slide-number-focus">1</span>
+              <span class="slide-number">2</span>
+              <span class="slide-number">3</span>
+              <span class="slide-number">•••</span>
+              <span class="slide-number">5</span>
+            </div>
+          </div>
+        </div>
       </div>
-    </main>
+    </div>
 
     <!-- Footer -->
     <footer>
       <div class="container-footer">
         <div class="logo-footer">
-          <img src="asset/image/Logo2.png" alt="Logo" />
+          <img src="../assets/image/Logo2.png" alt="Logo" />
         </div>
         <hr class="footer-divider" />
         <div class="footer-columns">
