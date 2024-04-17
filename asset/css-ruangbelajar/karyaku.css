@@ -306,6 +306,16 @@ header {
   scale: 0.95;
 }
 
+.action_btn.notification_btn {
+  background-color: transparent;
+  color: #000;
+}
+
+.action_btn.profile_btn {
+  background-color: transparent;
+  color: #000;
+}
+
 .action_btn.register_btn {
   margin-right: 10px;
   border: 2px solid #5494e6;

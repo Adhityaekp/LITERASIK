@@ -85,7 +85,7 @@ main {
   height: 70px;
   justify-content: space-between;
   margin: 0 auto;
-  margin-top: 30vh ;
+  margin-top: 30vh;
   margin-bottom: 10vh;
   padding: 0 15px;
   width: 80%;
@@ -296,7 +296,7 @@ header {
 }
 
 .links li a.focus {
-  font-weight: 600; 
+  font-weight: 600;
   color: #407bff;
 }
 
@@ -319,6 +319,16 @@ header {
 
 .action_btn:active {
   scale: 0.95;
+}
+
+.action_btn.notification_btn {
+  background-color: transparent;
+  color: #000;
+}
+
+.action_btn.profile_btn {
+  background-color: transparent;
+  color: #000;
 }
 
 .action_btn.register_btn {
@@ -360,7 +370,7 @@ header {
 }
 
 .dropdown_menu li a.focus {
-  font-weight: 600; 
+  font-weight: 600;
   color: #407bff;
 }
 
@@ -373,7 +383,6 @@ header {
 .dropdown_menu .action_btn.register_btn {
   margin: auto;
 }
-
 
 /* 
 =================================
@@ -424,7 +433,7 @@ header {
     flex-wrap: wrap;
     justify-content: center;
   }
-  
+
   .service-card {
     width: calc(100% - 20px);
     margin: 10px;
