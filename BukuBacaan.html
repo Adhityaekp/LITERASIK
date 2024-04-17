@@ -30,7 +30,7 @@
                     </form>
                 </li>
                 <li>
-                    <button class="action_btn filter_btn"><i class="fas fa-filter"></i></button>
+                    <button class="action_btn filter_btn" id="filterBtn"><i class="fas fa-filter"></i></button>
                 </li>
             </ul>
             <div>
@@ -42,14 +42,55 @@
             </div>
         </div>
 
+        <div class="popup-filter">
+            <div class="filter-header">
+                <h2>Filter</h2>
+                <button class="exit-button"><i class="fas fa-times"></i></button>
+            </div>
+            <h3>Jenis Buku</h3>
+            <div class="filter-options">
+                <button class="filter-button">Novel</button>
+                <button class="filter-button">Cerpen</button>
+                <button class="filter-button">Biografi</button>
+                <button class="filter-button">Autobiografi</button>
+                <button class="filter-button">Ensiklopedia</button>
+            </div>
+            <h3>Genre</h3>
+            <div class="filter-options">
+                <button class="filter-button">Fiksi</button>
+                <button class="filter-button">Non Fiksi</button>
+                <button class="filter-button">Fantasi</button>
+                <button class="filter-button">Sastra</button>
+                <button class="filter-button">Romansa</button>
+                <button class="filter-button">Klasik</button>
+            </div>
+            <div class="filter-options">
+                <button class="filter-button">Humor</button>
+                <button class="filter-button">Misteri</button>
+                <button class="filter-button">Horor</button>
+                <button class="filter-button">Keuangan</button>
+                <button class="filter-button">Edukasi</button>
+                <button class="filter-button">Sosial</button>
+            </div>
+            <h3>Usia</h3>
+            <div class="filter-options">
+                <button class="filter-button">7-12</button>
+                <button class="filter-button">13-18</button>
+                <button class="filter-button">18+</button>
+                <button class="filter-button">Semua Usia</button>
+            </div>
+            <div class="apply-reset-buttons">
+                <button class="filter-button reset-button">Reset Filter</button>
+                <button class="filter-button apply-button">Terapkan Filter</button>
+            </div>
+        </div>
+
         <div class="dropdown_menu">
             <li><a href="Beranda.html" class="focus">Beranda</a></li>
             <li><a href="Notifikasi.html" class="action_btn register_btn">Notifikasi</a></li>
             <li><a href="Profil.html" class="action_btn profil">Anonymous</a></li>
         </div>
     </header>
-
-
 
     <div class="content">
         <div class="landing-container-BukuBacaan">
@@ -295,6 +336,21 @@
                 ? 'fa-solid fa-xmark'
                 : 'fa-solid fa-bars'
         }
+
+        const filterButton = document.querySelector('.filter_btn');
+        const popupFilter = document.querySelector('.popup-filter');
+
+        filterButton.addEventListener('click', function () {
+            popupFilter.classList.toggle('show');
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const exitButton = document.querySelector('.exit-button');
+
+            exitButton.addEventListener('click', function () {
+                window.location.href = 'BukuBacaan.html'; 
+            });
+        });
 
     </script>
 </body>

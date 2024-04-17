@@ -188,6 +188,107 @@ Header {
 }
 
 /* ==================================================
+   Filter
+================================================== */
+.popup-filter {
+  position: fixed;
+  top: calc(50% + 200px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  display: none;
+  z-index: 1000;
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filter-header h2 {
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.exit-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.exit-button i {
+  color: #ccc;
+  font-size: 20px;
+}
+
+.exit-button:hover i {
+  color: #333;
+}
+
+.popup-filter h3 {
+  font-weight: 300;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.popup-filter.show {
+  display: block;
+}
+
+.filter-options {
+  margin-bottom: 10px;
+}
+
+.filter-button {
+  border: 2px solid #5494e6;
+  border-radius: 20px;
+  background-color: transparent;
+  color: #5494e6;
+  padding: 8px 16px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-button:hover {
+  background-color: #5494e6;
+  color: #fff;
+}
+
+.apply-reset-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.reset-button {
+  border: 1px solid #5494e6;
+  color: #5494e6;
+  background-color: transparent;
+}
+
+.reset-button:hover {
+  background-color: #5494e6;
+  color: #fff;
+}
+
+.apply-button {
+  background-color: #5494e6;
+  color: #fff;
+  border: none;
+}
+
+.apply-button:hover {
+  background-color: #4472c4;
+}
+
+/* ==================================================
    Dropdown menu
 ================================================== */
 .dropdown_menu {
@@ -614,28 +715,6 @@ Header {
   scrollbar-width: none;
 }
 
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #d9d9d9;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active,
-.dot:hover {
-  background-color: #000000;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
 /* ==================================================
    Event
 ================================================== */
@@ -888,41 +967,41 @@ footer {
   padding-top: ;
 }
 
-.tip-card {
+.tipInspirsi-card {
   display: flex;
   align-items: center;
   width: 100%;
   margin-bottom: 20px;
 }
 
-.tip-card img {
+.tipInspirsi-card img {
   width: 150px;
   height: auto;
   object-fit: cover;
 }
 
-.tip-card-content {
+.tipInspirsi-card-content {
   flex: 1;
   padding: 10px;
 }
 
-.tip-card {
+.tipInspirsi-card {
   margin-left: 10px;
   text-align: left;
 }
 
-.tip-card h3 {
+.tipInspirsi-card h3 {
   margin-top: 0;
   margin-bottom: 5px;
 }
 
-.tip-card .read-more {
+.tipInspirsi-card .read-more {
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 12px;
 }
 
-.tip-card .date {
+.tipInspirsi-card .date {
   margin-top: 5px;
   font-size: 14px;
   color: #888;
@@ -1058,7 +1137,7 @@ footer {
 }
 
 /* ==================================================
-   Rincian Artikel
+   Rincian Berita
 ================================================== */
 .Berita-container {
   max-width: 1200px;
@@ -1335,6 +1414,161 @@ table {
 }
 
 /* ==================================================
+   Event Page
+================================================== */
+.event {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.text-content-Blog {
+  flex: auto;
+  text-align: center;
+}
+
+.tips-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.tips-container h2 {
+  padding-top: ;
+}
+
+.tip-card {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.tip-card img {
+  width: 150px;
+  height: auto;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.tip-card-content {
+  flex: 1;
+  padding: 10px;
+}
+
+.tip-card {
+  margin-left: 10px;
+  text-align: left;
+}
+
+.tip-card h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.event-info {
+  margin-bottom: 5px;
+}
+
+.event-info .online {
+  color: #5494e6;
+  margin-right: 10px;
+}
+
+.event-info .public {
+  color: #34a853;
+}
+
+.event-info2 {
+  margin-top: 5px;
+  font-size: small;
+}
+
+.date-event,
+.time-event,
+.loc-event {
+  margin-right: 10px;
+}
+
+.daftar-sekarang-btn {
+  margin-top: 20px;
+  background-color: #5494e6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.daftar-sekarang-btn:hover {
+  background-color: #0056b3;
+}
+
+.card-divider {
+  margin-bottom: 20px;
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+}
+
+/* ==================================================
+   Rincian Event
+================================================== */
+.Rincian-Event-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.event-image {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.event-details {
+  text-align: left;
+}
+
+.event-details h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.event-details h3 {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.event-details h4 {
+  font-size: 18px;
+  font-weight: 100;
+  margin-bottom: 0;
+}
+
+.event-details p {
+  margin-bottom: 20px;
+}
+
+/* ==================================================
    Ruang Belajar 1
 ================================================== */
 .RB1-container {
@@ -1365,12 +1599,12 @@ table {
   cursor: pointer;
 }
 
-.flex-container {
+.flex-containerRB1 {
   display: flex;
   align-items: center;
 }
 
-#edu-content,
+#edu-contentRB1,
 #search-inputRB {
   flex: 1;
   height: 35px;
@@ -1451,8 +1685,145 @@ table {
 /* ==================================================
    Ruang Belajar 2
 ================================================== */
+<<<<<<< HEAD
+.RB2-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.RB2-container p {
+  font-size: 18px;
+}
+
+.flex-container {
+  display: flex;
+  margin-top: 5px;
+}
+
+.flex-container select {
+  padding: 8px 12px;
+  border: 1px solid #5494e6;
+  border-radius: 20px;
+  font-size: 16px;
+  color: #5494e6;
+  margin-right: 10px;
+}
+
+.flex-container select option {
+  background-color: transparent;
+}
+
+#search-inputRB2 {
+  flex: 1;
+  margin-right: 10px;
+}
+
+#search-inputRB2::placeholder {
+  color: white;
+}
+
+.card-wrapper-RB2 {
+  margin-top: 20px;
+}
+
+.card-RB2 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 25px;
+  width: calc(22% - 20px);
+}
+
+.material-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.card-RB2 img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-content-RB2 {
+  padding: 10px;
+}
+
+.card-title-RB2 h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.card-type-RB2 p {
+  font-size: 15px;
+  color: #888;
+}
+
+/* ==================================================
+   Rincian Ruang Belajar
+================================================== */
+.RincianRB-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.breadcrumbs {
+  margin-bottom: 5px;
+}
+
+.breadcrumbs a {
+  color: black;
+}
+
+.RincianRB-container h1 {
+  margin-bottom: 10;
+}
+
+.RincianRB-container h3 {
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.RincianRB-container img {
+  display: block;
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* ==================================================
+   Detail Buku
+================================================== */
+.DetailBuku-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: none;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+=======
 
 .RB2-container {
+>>>>>>> 967a4d4c8b3f8a53e13b85757906d37f46e3418d
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1460,6 +1831,143 @@ table {
   flex: 1 0 0;
 }
 
+<<<<<<< HEAD
+.left-columnDB {
+  background-color: #fff;
+  flex: 1;
+  padding: 20px;
+  border-radius: 20px;
+  margin-right: 20px;
+  max-height: 800px}
+
+.right-columnDB {
+  background-color: #fff;
+  flex: 2;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.left-columnDB h4 {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.bukuuu {
+  margin-top: 30px;
+}
+
+.bukuuu h3 {
+  font-weight: 300;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.ripiubuku {
+  margin-top: 200px;
+  text-align: center;
+}
+
+.left-columnDB img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  border-radius: 10px;
+}
+
+.right-column .DB {
+  margin-top: 20px;
+}
+
+.right-columnDB h3 {
+  font-size: 18px;
+}
+
+.right-columnDB p {
+  font-size: 16px;
+}
+
+/* ==================================================
+   Ulasan Buku
+================================================== */
+.Ulasan-Buku-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.Ulasan-Buku-container h2 {
+  font-weight: 300;
+  color: #767676;
+  text-align: left;
+}
+
+.review-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.profile-icon i {
+  font-size: 24px;
+}
+
+.review-details {
+  flex: 1;
+}
+
+.review-details h3 {
+  margin: 0;
+  font-weight: 300;
+}
+
+.rating {
+  color: #ffd700;
+}
+
+.review-details .rating i {
+  margin-right: 5px;
+}
+
+.suka {
+  margin-top: 10px;
+}
+
+.card-divider-ulasan {
+  margin: 20px 0;
+}
+
+.lengkap {
+  border: 1px solid #5494e6;
+  background-color: transparent;
+  color: #5494e6;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 20px;
+  display: block;
+  margin: 0 auto;
+}
+
+.lengkap:hover {
+  background-color: #5494e6;
+  color: #fff;
+=======
 .RB2-container h1 {
   color: var(--black, #000);
   font-family: Nunito;
@@ -1508,6 +2016,7 @@ table {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+>>>>>>> 967a4d4c8b3f8a53e13b85757906d37f46e3418d
 }
 
 /* ==================================================
@@ -1633,14 +2142,5 @@ table {
   .article-card {
     width: calc(100% - 20px);
     margin: 10px 0;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
   }
 }

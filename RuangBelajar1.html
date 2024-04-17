@@ -68,8 +68,8 @@
             <div class="left-column">
                 <h1>Ayo Bermain Dan Belajar Dengan Game Edukasi Yang Menyenangkan!</h1>
                 <h4>Telusuri berbagai konten edukasi menarik!</h4>
-                <div class="flex-container">
-                    <select id="edu-content">
+                <div class="flex-containerRB1">
+                    <select id="edu-contentRB1">
                         <option>Pilih Tipe Konten</option>
                         <option>Konten 1</option>
                         <option>Konten 2</option>
@@ -81,66 +81,66 @@
             </div>
             <div class="right-column">
                 <div class="material-card-container">
-                    <div class="material-card">
+                    <div class="material-card" data-href="RincianRuangBelajar.html">
                         <img src="asset/image/membandingkan.jpg" alt="Materi 1">
                         <div class="card-details">
-                            <h3>Membandingkan</h3>
+                            <h3>BSB | Membandingkan BIlangan</h3>
                             <p>Game</p>
                         </div>
                     </div>
-                    <div class="material-card">
+                    <div class="material-card" data-href="RincianRuangBelajar.html">
                         <img src="asset/image/membandingkan.jpg" alt="Materi 1">
                         <div class="card-details">
-                            <h3>Membandingkan</h3>
+                            <h3>BSB | Membandingkan BIlangan</h3>
                             <p>Game</p>
                         </div>
                     </div>
-                    <div class="material-card">
+                    <div class="material-card" data-href="RincianRuangBelajar.html">
                         <img src="asset/image/membandingkan.jpg" alt="Materi 1">
                         <div class="card-details">
-                            <h3>Membandingkan</h3>
+                            <h3>BSB | Membandingkan BIlangan</h3>
                             <p>Game</p>
                         </div>
                     </div>
-                    <div class="material-card">
+                    <div class="material-card" data-href="RincianRuangBelajar.html">
                         <img src="asset/image/membandingkan.jpg" alt="Materi 1">
                         <div class="card-details">
-                            <h3>Membandingkan</h3>
+                            <h3>BSB | Membandingkan BIlangan</h3>
                             <p>Game</p>
                         </div>
                     </div>
-                    <div class="material-card">
+                    <div class="material-card" data-href="RincianRuangBelajar.html">
                         <img src="asset/image/membandingkan.jpg" alt="Materi 1">
                         <div class="card-details">
-                            <h3>Membandingkan</h3>
+                            <h3>BSB | Membandingkan BIlangan</h3>
                             <p>Game</p>
                         </div>
                     </div>
-                    <div class="material-card">
+                    <div class="material-card" data-href="RincianRuangBelajar.html">
                         <img src="asset/image/membandingkan.jpg" alt="Materi 1">
                         <div class="card-details">
-                            <h3>Membandingkan</h3>
+                            <h3>BSB | Membandingkan BIlangan</h3>
                             <p>Game</p>
                         </div>
                     </div>
-                    <div class="material-card">
+                    <div class="material-card" data-href="RincianRuangBelajar.html">
                         <img src="asset/image/membandingkan.jpg" alt="Materi 1">
                         <div class="card-details">
-                            <h3>Membandingkan</h3>
+                            <h3>BSB | Membandingkan BIlangan</h3>
                             <p>Game</p>
                         </div>
                     </div>
-                    <div class="material-card">
+                    <div class="material-card" data-href="RincianRuangBelajar.html">
                         <img src="asset/image/membandingkan.jpg" alt="Materi 1">
                         <div class="card-details">
-                            <h3>Membandingkan</h3>
+                            <h3>BSB | Membandingkan BIlangan</h3>
                             <p>Game</p>
                         </div>
                     </div>
-                    <div class="material-card">
+                    <div class="material-card" data-href="RincianRuangBelajar.html">
                         <img src="asset/image/membandingkan.jpg" alt="Materi 1">
                         <div class="card-details">
-                            <h3>Membandingkan</h3>
+                            <h3>BSB | Membandingkan BIlangan</h3>
                             <p>Game</p>
                         </div>
                     </div>
@@ -214,6 +214,15 @@
                 ? 'fa-solid fa-xmark'
                 : 'fa-solid fa-bars'
         }
+
+        const materialCards = document.querySelectorAll('.material-card');
+
+        materialCards.forEach(card => {
+            card.addEventListener('click', () => {
+                const url = card.getAttribute('data-href');
+                window.location.href = url;
+            });
+        });
     </script>
 </body>
 
