@@ -614,6 +614,28 @@ Header {
   scrollbar-width: none;
 }
 
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #000000;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
 /* ==================================================
    Event
 ================================================== */
@@ -1611,5 +1633,14 @@ table {
   .article-card {
     width: calc(100% - 20px);
     margin: 10px 0;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
   }
 }
