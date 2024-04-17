@@ -77,7 +77,7 @@ header nav ul li a:hover {
 ================================= 
 */
 section {
-  width: 80%;
+  width: 100%;
   height: 70px;
   display: flex;
   padding: 0 40px;
@@ -95,10 +95,10 @@ section .sidebar {
   border-radius: 20px;
   bottom: 0;
   display: flex;
-  height: 75vh;
+  height: 100vh;
   left: 0;
   overflow: hidden;
-  padding: 0 3rem;
+  padding-left: 25px;
   position: sticky;
   top: 0;
   transition: all 0.5s linear;
@@ -156,7 +156,7 @@ section .favorit {
   top: auto;
   left: 0;
   bottom: 0;
-  width: auto;
+  width: 100%;
   height: 75vh;
   padding: 0 1.7rem;
   overflow: hidden;
@@ -166,6 +166,10 @@ section .favorit {
   flex-direction: column;
   border-radius: 20px;
   padding-top: 25px;
+  -webkit-transition: ;
+  -moz-transition: ;
+  -ms-transition: ;
+  -o-transition: ;
 }
 section .favorit .items {
   height: 88%;
