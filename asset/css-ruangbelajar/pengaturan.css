@@ -82,7 +82,7 @@ section {
   gap: 20px;
   height: auto;
   padding: 0 40px;
-  width: auto;
+  width: 100%;
   margin: 15vh 0px 50px 0px;
 }
 hr {
@@ -95,10 +95,10 @@ hr {
   border-radius: 20px;
   bottom: 0;
   display: flex;
-  height: 75vh;
+  height: 100vh;
   left: 0;
   overflow: hidden;
-  padding: 0 3rem;
+  padding-left: 25px;
   position: sticky;
   top: 0;
   transition: all 0.5s linear;
@@ -165,7 +165,7 @@ hr {
   position: sticky;
   top: auto;
   transition: all 0.5s linear;
-  width: auto;
+  width: 100%;
 }
 .settings .items {
   height: 40%;
